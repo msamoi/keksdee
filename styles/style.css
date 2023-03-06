@@ -1,0 +1,224 @@
+html
+{
+  font-family: 'Arial', sans-serif;
+}
+
+body
+{
+  background-color: rgb(44, 6, 31);
+}
+
+header
+{
+  background-color: rgb(225, 216, 159);
+  color: rgb(44, 6, 31);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+header > a
+{
+  padding: 5px;
+}
+
+footer
+{
+  position: fixed;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+footer a:link, footer a:visited, footer a:active
+{
+  color: white;
+  padding: 3px;
+  text-decoration: none;
+}
+
+footer a:link:hover
+{
+  background-color: dimgray;
+}
+
+nav  /* https://www.w3schools.com/css/css_navbar.asp––> */
+{
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgb(55, 64, 69);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+nav a
+{
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav a.active
+{
+  background-color: rgb(216, 146, 22);
+  color: white;
+}
+
+nav a:hover:not(.active)
+{
+  background-color: #555;
+  color: white;
+}
+
+div.content
+{
+  color: white;
+  margin-left: 200px;
+  padding: 1px 16px;
+  margin-bottom: 50px;
+}
+
+div.content > div > a
+{
+  color: white;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 700px)
+{
+  nav
+  {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  nav a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px)
+{
+  nav a
+  {
+    text-align: center;
+    float: none;
+  }
+}
+
+#profpic
+{
+  border-radius: 5%;
+  border: 2px solid rgb(216, 146, 22);
+}
+
+.about
+{
+  background-color: rgb(55, 64, 69);
+  width: 350px;
+  color: white;
+  border: 20px solid rgb(55, 64, 69);
+  border-radius: 5px;
+}
+
+.about > img
+{
+  background-color: white;
+  border-radius: 100%;
+}
+
+.containmeme
+{
+  object-fit: cover;
+  color: white;
+  min-width: 500px;
+  width: min-content;
+  background-color: rgb(55, 64, 69);
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 30px solid rgb(55, 64, 69);
+    border-radius: 5px;
+}
+.containmeme > .title
+{
+  font-size: 22px;
+}
+
+.rating
+{
+  font-size: 22px;
+  color: rgb(225, 216, 159);
+  margin-left: 3px;
+}
+
+.upvote, .downvote
+{
+  font-size: 32px;
+  color: rgb(225, 216, 159);
+}
+
+.upvote:hover
+{
+  cursor: pointer;
+  color: lime;
+}
+
+.downvote:hover
+{
+  cursor: pointer;
+  color: orangered;
+}
+
+.containmeme > .user{
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.meme {
+  display: block;
+  height: auto;
+  width: 500px;
+  object-fit: contain;
+  background-color: rgb(55, 64, 69);
+	margin-left: auto;
+	margin-right: auto;
+	border: 30px solid rgb(55, 64, 69);
+}
+
+.pagebutton
+{
+  padding: 5px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+#success
+{
+  background-color: green;
+  font-weight: bold;
+  color: white;
+  border-radius: 3px;
+}
+
+#error
+{
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  margin-left: 200px;
+  border-radius: 3px;
+}
